@@ -16,7 +16,7 @@ In this post, I am using Ubuntu 20.04 with ROS2 foxy already installed.
 
 #### Micro ROS setup
 
-Clone this repo <https://github.com/micro-ROS/micro_ros_setup/tree/foxy> and follow the instruction in order to build the Micro-ROS agent (interface between the UART and ROS2). For some reason, every script in this repo have a carriage-return character at the end of every line. In order to run it on Linux, you can run `find . -type f -print0 | xargs -0 dos2unix` in order to convert all the files.
+Clone this repo <https://github.com/micro-ROS/micro_ros_setup/tree/foxy> and follow the instruction in order to build the Micro-ROS agent (interface between the UART and ROS2).
 #### Micro_ros_stm32cubemx_utils
 In order to generate the static library, we are going to need another repo micro_ros_stm32cubemx_utils <https://github.com/micro-ROS/micro_ros_stm32cubemx_utils/tree/foxy>. 
 For this example, this repo as well as the CubeMX project are going to be located in one directory.
