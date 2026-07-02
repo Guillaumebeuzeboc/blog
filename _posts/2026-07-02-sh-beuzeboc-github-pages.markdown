@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Launch complex command and automation scripts from anywhere"
+title: "Launch complex commands and automation scripts from anywhere"
 date: 2026-07-02 00:00:00 +0700
-categories: [bash, workflow, GitHub]
+categories: [bash, workflow, jekyll]
 image: Broadcast_Mail.png
 ---
 
-Often, I find myself in a fresh container/VM or even a freshly installed Linux on an embded board or a server.
-From there I usually want to run something I am used to run (installing and setting up a software, run a long CLI).
-`https://cheat.sh/` is of great help in many case but what about my "custom" stuff?
+Often, I find myself in a fresh container or VM, or even with a freshly installed Linux system on an embedded board or a server.
+From there, I usually want to run things I am used to running (installing and setting up software, or running a long CLI command).
+`https://cheat.sh/` is a great help in many cases, but what about my custom stuff?
 Nowadays you cannot skip the universal software installation process: `curl my-url | bash`
 Trusting a random script from the internet is bad, but what if it was your scripts?
 I wanted a simple and easy to remember place to share useful shell scripts, so I published my scripts repository as a website at [sh.beuzeboc.com](https://sh.beuzeboc.com), powered by GitHub Pages.
@@ -19,7 +19,7 @@ The source repository is here: [Guillaumebeuzeboc/scripts](https://github.com/Gu
 
 ---
 
-## Prerequisite of this project
+## Goals of this project
 
 - Keep practical shell scripts in one place
 - Make scripts always reachable without having to open anything
@@ -36,9 +36,9 @@ docs/
 └── ...
 {% endhighlight %}
 
-The `.github/workflows` simply contains a `docs-scripts-list.yml`. This is simply used to keep an updated list of the scripts as a homepage. Just in case I forget one script name.
+The `.github/workflows` directory contains `docs-scripts-list.yml`. It keeps an updated list of scripts on the homepage, in case I forget a script name.
 
-The `docs` directory contains the scripts. GH pages only supports `docs` as a directory name.
+The `docs` directory contains the scripts. In this setup, GitHub Pages publishes from `docs/`.
 I tried to symlink. It broke everything. So it stays in `docs`.
 
 ---
@@ -51,7 +51,7 @@ I tried to symlink. It broke everything. So it stays in `docs`.
 
 ### Configure custom domain
 
-While you can keep the GH pages (free) URL, it not convinient to type since it's going to be 
+While you can keep the free GitHub Pages URL, it is not convenient to type since it is going to be 
 be something like: `<username>.github.io`.
 
 So I decided to use a subdomain name:
@@ -61,22 +61,22 @@ So I decided to use a subdomain name:
 
 ### Validate deployment
 
-- Make sure to have a `readme.md` in your `docs/`
+- Make sure to have a `README.md` in your `docs/`
 - Check the latest Pages deployment status
 - Open `https://sh.beuzeboc.com`
 - Verify HTTPS is enabled
 
 Make sure to follow exactly the steps mentioned.
-If anything goes wrong, GH is going to throw an error 500 to you,
-without any further informations.
+If anything goes wrong, GitHub may throw an HTTP 500 error,
+without any further information.
 
 ---
 
 ## The scripts
 
 For the scripts this is up to you.
-Try to keep them as simple as possible and relying as much as possible
-on posix tools.
+Try to keep them as simple as possible and rely as much as possible
+on POSIX tools.
 You never know what is installed on the host machine.
 
 ### Automate the homepage
@@ -84,7 +84,6 @@ You never know what is installed on the host machine.
 In order to have a homepage always up to date,
 you can automate that with a workflow.
 
-The [workflow](https://github.com/Guillaumebeuzeboc/scripts/blob/main/.github/workflows/docs-scripts-list.yml) simply list all the files add them to the readme and pushes the changes.
+The [workflow](https://github.com/Guillaumebeuzeboc/scripts/blob/main/.github/workflows/docs-scripts-list.yml) simply lists all files, adds them to the README, and pushes the changes.
 
 This way no need to maintain the file list.
-
