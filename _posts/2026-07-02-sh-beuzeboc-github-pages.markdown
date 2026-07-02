@@ -7,15 +7,13 @@ image: Broadcast_Mail.png
 ---
 
 Often, I find myself in a fresh container or VM, or even with a freshly installed Linux system on an embedded board or a server.
-From there, I usually want to run things I am used to running (installing and setting up software, or running a long CLI command).
+From there, I usually want to call things I am used to run (installing and setting up software, or running a long CLI command).
 `https://cheat.sh/` is a great help in many cases, but what about my custom stuff?
-Nowadays you cannot skip the universal software installation process: `curl my-url | bash`
-Trusting a random script from the internet is bad, but what if it was your scripts?
 I wanted a simple and easy to remember place to share useful shell scripts, so I published my scripts repository as a website at [sh.beuzeboc.com](https://sh.beuzeboc.com), powered by GitHub Pages.
 
-Now when I launch a new machine I can `curl sh.beuzeboc.com/ros2` and install ROS 2 without opening any documentation.
+Now when I launch a new machine I can `curl sh.beuzeboc.com/lxd-vm` and configure and launch an LXD VM without having the remmeber the complex CLI.
 
-The source repository is here: [Guillaumebeuzeboc/scripts](https://github.com/Guillaumebeuzeboc/scripts/).
+Source repository: [Guillaumebeuzeboc/scripts](https://github.com/Guillaumebeuzeboc/scripts/).
 
 ---
 
