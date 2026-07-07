@@ -6,12 +6,13 @@ categories: [bash, workflow, jekyll]
 image: Broadcast_Mail.png
 ---
 
-Often, I find myself in a fresh container or VM, or even with a freshly installed Linux system on an embedded board or a server.
-From there, I usually want to call things I am used to run (installing and setting up software, or running a long CLI command).
-`https://cheat.sh/` is a great help in many cases, but what about my custom stuff?
-I wanted a simple and easy to remember place to share useful shell scripts, so I published my scripts repository as a website at [sh.beuzeboc.com](https://sh.beuzeboc.com), powered by GitHub Pages.
+Often, I find myself in a fresh container, a VM, or even with a freshly installed Linux system on an embedded board or a server.
+From there, I usually want to run tasks I am used to: installing and setting up software, or running a long CLI commands.
 
-Now when I launch a new machine I can `curl sh.beuzeboc.com/lxd-vm` and configure and launch an LXD VM without having the remmeber the complex CLI.
+`https://cheat.sh/` is a great help in many cases, but what about my custom stuff?
+I wanted a simple and easy to remember place to share custom shell scripts, so I published my scripts repository as a website at [sh.beuzeboc.com](https://sh.beuzeboc.com), powered by GitHub Pages.
+
+Now when I launch a new machine I can `curl sh.beuzeboc.com/lxd-vm` and configure and launch an LXD VM without having to remember the complex CLI.
 
 Source repository: [Guillaumebeuzeboc/scripts](https://github.com/Guillaumebeuzeboc/scripts/).
 
@@ -34,9 +35,10 @@ docs/
 └── ...
 {% endhighlight %}
 
-The `.github/workflows` directory contains `docs-scripts-list.yml`. It keeps an updated list of scripts on the homepage, in case I forget a script name.
+The `.github/workflows` directory contains `docs-scripts-list.yml`. Run on every push to keeps an updated list of the scripts on the README.
+This way, if I forget a script name I can simply go to the [sh.beuzeboc.com](sh.beuzeboc.com) to see the list.
 
-The `docs` directory contains the scripts. In this setup, GitHub Pages publishes from `docs/`.
+The `docs/` directory contains the scripts. In this setup, GitHub Pages publishes from `docs/`.
 I tried to symlink. It broke everything. So it stays in `docs`.
 
 ---
@@ -49,13 +51,12 @@ I tried to symlink. It broke everything. So it stays in `docs`.
 
 ### Configure custom domain
 
-While you can keep the free GitHub Pages URL, it is not convenient to type since it is going to be 
-be something like: `<username>.github.io`.
+While you can keep the free GitHub Pages URL, it is not convenient to type since it is going to be something like: `<username>.github.io`.
 
 So I decided to use a subdomain name:
 - Set the custom domain to `sh.beuzeboc.com`
 - Ensure the repository includes a `CNAME` file
-- Configure DNS records (on my domain name provider) to point to GitHub Pages
+- Configure DNS records (on my domain name provider) to point to this GitHub Page
 
 ### Validate deployment
 
@@ -72,16 +73,15 @@ without any further information.
 
 ## The scripts
 
-For the scripts this is up to you.
+For scripts, this is up to you.
 Try to keep them as simple as possible and rely as much as possible
 on POSIX tools.
 You never know what is installed on the host machine.
 
 ### Automate the homepage
 
-In order to have a homepage always up to date,
-you can automate that with a workflow.
+In order to have a homepage always up to date, you can automate that with a workflow.
 
 The [workflow](https://github.com/Guillaumebeuzeboc/scripts/blob/main/.github/workflows/docs-scripts-list.yml) simply lists all files, adds them to the README, and pushes the changes.
 
-This way no need to maintain the file list.
+This way, there is no need to maintain the file list.
