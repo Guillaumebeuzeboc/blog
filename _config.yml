@@ -16,12 +16,10 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-twitter
-      link: "https://twitter.com/BeuzebocG"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/guillaume-beuzeboc/"
     - icon: fa-github
       link: "https://github.com/Guillaumebeuzeboc"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/guillaume-beuzeboc/"
 
 share:
   twitter_username: BeuzebocG

@@ -1,5 +1,21 @@
 [
 	{
+		"slug": "colcon-in-container-roscon-france-2024",
+		"name": "ROSCon France 2024 - Colcon-in-container",
+		"image": "roscon-france-2024.jpg",
+		"url": "https://www.youtube.com/watch?v=lOMpUYInRKI",
+		"date": "October 2024",
+		"tags": ["Public Speaking","ROS","Colcon","Python"]
+	},
+	{
+		"slug": "cos-for-robotics-roscon-2025",
+		"name": "ROSCon 2025 - COS for Devices",
+		"image": "roscon-2025.jpg",
+		"url": "https://vimeo.com/1136163245",
+		"date": "June 2025",
+		"tags": ["Public Speaking","Observability","ROS","Snaps"]
+	},
+	{
 		"slug": "projects",
 		"name": "Harciot",
 		"image": "placeholder.jpg",
@@ -10,7 +26,7 @@
 	{
 		"slug": "projects",
 		"name": "Beuzebot",
-		"image": "placeholder.jpg",
+		"image": "beuzebot.jpg",
 		"url": "https://github.com/Guillaumebeuzeboc/beuzebot",
 		"date": "July 2018",
 		"tags": ["Robotics","C++","Python"]
