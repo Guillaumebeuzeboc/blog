@@ -66,6 +66,13 @@ a:hover {
 .post p {
   margin-bottom: 1.25em;
 }
+.post :not(pre) > code {
+  color: #F0E6D2;
+  background: #3A3838;
+  border: 1px solid #4A4848;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
 div.content pre {
   background: #333333;
   padding: 10px;
