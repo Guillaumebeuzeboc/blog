@@ -69,7 +69,8 @@ The number of xruns indicates how many times your CPU could not process a buffer
 When this happens, you will generally hear a crackle or the sound may stop briefly.
 On most of my computers, I can achieve approximately 5 ms latency with a 48 kHz sample rate and a buffer size of 256 samples.
 
-TODO: screenshot of RaySession.
+
+![RaySession with Guitarix](/static/img/posts/RaySession_Guitarix.jpg "RaySession with Guitarix")
 
 ### Guitarix
 
@@ -88,7 +89,7 @@ My recommendations are:
 From here, you can save your own bank and then add effects such as reverb, overdrive, and chorus.
 This is a great way to discover how to shape your own sound.
 
-TODO: Screenshot Guitarix
+![Guitarix](/static/img/posts/Guitarix.jpg "Guitarix")
 
 
 ## Bonus: Ardour and music production
@@ -108,4 +109,4 @@ apt list | grep lv2
 
 When using Guitarix and Ardour, you can either load individual Guitarix plug-ins within an Ardour track or keep Guitarix as a standalone application and route its output into Ardour from your patchbay, which is my preferred approach.
 
-TODO: Ardour + keyboard + Guitarix
+![Ardour and a Piano](/static/img/posts/Ardour.jpg "Ardour and a Piano")
