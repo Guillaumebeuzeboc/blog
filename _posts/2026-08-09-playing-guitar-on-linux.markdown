@@ -9,7 +9,7 @@ image: Broadcast_Mail.png
 Nowadays, you only need two things to play an electric guitar: a Linux computer and a sound card.
 Everything else, including amplifier simulation and sound production, can rely entirely on open source software.
 
-Ubuntu 24.04 and newer use PipeWire as the default audio stack.
+Ubuntu 24.04 and newer use PipeWire as the default audio server.
 Before that, you usually had to use PulseAudio for standard desktop sound and JACK for music production and playing.
 Integrating the two was unreliable and not straightforward.
 
