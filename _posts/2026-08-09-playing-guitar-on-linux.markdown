@@ -3,7 +3,7 @@ layout: post
 title: "Playing guitar on Linux"
 date: 2026-08-09 00:00:00 +0700
 categories: [Ubuntu, PipeWire, Guitarix, JACK, Ardour]
-image: Broadcast_Mail.png
+image: Playing_guitar_on_Linux/Guitarix.jpg
 ---
 
 Nowadays, you only need two things to play an electric guitar: a Linux computer and a sound card.
@@ -52,7 +52,7 @@ Before running Guitarix, however, we can get started with RaySession.
 
 ### RaySession
 
-RaySession can be used for many things: configuring PipeWire's buffer size, setting up the patchbay, and even save and restore applications and their routing.
+RaySession can be used for many things: configuring PipeWire's buffer size, setting up the patchbay, and even saving and restoring applications and their routing.
 
 Start by installing RaySession and Guitarix with `apt`.
 Then launch RaySession and create a guitar session.
